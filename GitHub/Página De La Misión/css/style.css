@@ -1,0 +1,28 @@
+body{
+	margin-top: 50px;
+
+	background-color: rgb(255, 255, 255);
+}
+
+.space-top{
+	margin-top: 2rem;
+}
+
+.space-bottom{
+	margin-bottom: 2rem;
+}
+
+.channels{
+	text-decoration: none;
+	list-style: none;
+	display: inline-block;
+
+	float: left;
+	padding: 0 10px;
+}
+
+.footer{
+	position: static;
+	bottom: 0;
+	width: 100%;
+}

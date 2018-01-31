@@ -1,0 +1,45 @@
+Conceptos Generales del Marketing
+
+Marketing:
+
+Definición Técnica:
+Descripción: El Estudio de Mercado para guíar a una empresa en los pasos a dar, no solo para vender si no 'CRECER' como empresa.
+
+--> OutBound y Inbound Marketing
+* Deficiones:
+	- OutBound Marketing:
+	- InBound Marketing:
+
+* Diferencias:
+	1 El OutBound Marketing: Su finalidad es dar a conocerse(una empresa, marca, persona, etc.)
+	2 El OutBound Marketing: Alcanzar un gran número de personas
+	3 El OutBound Marketing: Vender
+	4 El OutBound Marketing: Busca Beneficios
+	5 El OutBound Marketing: General, Lanzar.
+	6 El OutBound Marketing: Los datos no son sustentables para realizar con mayor efectividad futuras campañas 
+
+	1 InBound Marketing: Su finalidad es la 'Tracción' de un público objetivo
+	2 InBound Marketing: Conocer a su cliente(Genero, Edad, Gustos, Preferencias, etc.)
+	3 InBound Marketing: 'Fidelizar'
+	4 InBound Marketing: Busca'Beneficiar'
+	5 InBound Marketing: 'Específico', Dirigir
+	6 InBound Marketing: Te Permite 'Medir' y Recabar datos tangibles, para realizar con Mayor Eficaciz futuras campañas
+
+* Casos de Uso:
+	- OutBound Marketing: Televisón, anuncios(Revistas, prensa), Super Bowld...
+	- InBound Marketing: Google AdWords|Google Analitycs, Facebook Ads | Facebook Bussiness <-- 'Campañas Órganicas o Pago'
+
+* Cuando Utilizar El OutBound Marketing:
+	- Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+
+
+--> Influencers
+* Qué son?:
+	- Es aquella persona que se ha dedicado a formar 
+	

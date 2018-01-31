@@ -1,0 +1,779 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=maximum-scale=1, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <meta name="description" content="Slicebox - 3D Image Slider with Fallback" />
+    <meta name="keywords" content="jquery, css3, 3d, webkit, fallback, slider, css3, 3d transforms, slices, rotate, box, automatic" />
+    <meta name="author" content="Pedro Botelho for Codrops" />
+    
+    <title>Liceo Rosales</title>
+
+    <link rel="shortcut icon" href="../favicon.ico"> 
+    <link rel="stylesheet" type="text/css" href="css/demo.css" />
+    <link rel="stylesheet" type="text/css" href="css/slicebox.css" />
+    <link rel="stylesheet" type="text/css" href="css/custom.css" />
+    <script type="text/javascript" src="js/modernizr.custom.46884.js"></script>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Animation CSS -->
+    <link href="css/animate.css" rel="stylesheet">
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet">
+
+    <link href="css/plugins/blueimp/css/blueimp-gallery.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+<body id="page-top" class="landing-page no-skin-config">
+<div class="navbar-wrapper">
+        <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+            <div class="container">
+                <div class="navbar-header page-scroll">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="http://facilaula.com/">Fácil Aula</a>
+                </div>
+                <div id="navbar" class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a class="page-scroll" href="#page-top"><i class="fa fa-home"></i></a></li>
+                        <li><a class="page-scroll" href="#features">Quienes Somos</a></li>
+                        <li><a class="page-scroll" href="#testimonials">Jornadas</a></li>
+                        <li><a href="#incripciones" class="page-scroll">Inscripciones</a></li>
+                        <li><a class="page-scroll" href="#team">Gallería</a></li>
+                        <!--<li><a class="page-scroll" href="#pricing">Pestaña #n</a></li>-->
+                        <li><a class="page-scroll" href="#contact">Contáctenos</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+</div>
+
+<div style="margin-top: 10em;" class="wrapper">
+
+    <ul id="sb-slider" class="sb-slider">
+        <li>
+            <a href="#" target="_blank"><img src="img/inicio-1.jpg" alt="image1"/></a>
+        </li>
+        <li>
+            <a href="#" target="_blank"><img src="img/inicio-2.jpg" alt="image2"/></a>
+        </li>
+        <li>
+            <a href="#" target="_blank"><img src="img/inicio-3.jpg" alt="image1"/></a>
+        </li>
+        <li>
+            <a href="#" target="_blank"><img src="img/inicio-4.jpg" alt="image1"/></a>
+        </li>
+        <li>
+            <a href="#" target="_blank"><img src="img/inicio-5.jpg" alt="image1"/></a>
+        </li>
+    </ul>
+
+    <div id="shadow" class="shadow"></div>
+
+    
+
+</div><!-- /wrapper -->
+
+<!--<div id="inSlider" class="carousel carousel-fade" data-ride="carousel">
+    <ol class="carousel-indicators">
+        <li data-target="#inSlider" data-slide-to="0" class="active"></li>
+        <li data-target="#inSlider" data-slide-to="1"></li>
+    </ol>
+    <div class="carousel-inner" role="listbox">
+        <div class="item active">
+            <div class="container">
+                <div class="carousel-caption">
+                    <h1>Lorem ipsum<br/>
+                         dolor sit amet, consectetur<br/>
+                         adipisicing elit. Blandi<br/>
+                        tiis aspernatur placeat</h1>
+                    <p>Lorem Ipsum is simply dummy text of the printing.</p>
+                    <p>
+                        <!-<a class="btn btn-lg btn-primary" href="#" role="button">READ MORE</a>
+                        <a class="caption-link" href="#" role="button">Inspinia Theme</a>->
+                    </p>
+                </div>
+                <!-<div class="carousel-image wow zoomIn">
+                    <img src="img/landing/laptop.png" alt="laptop"/>
+                </div>->
+            </div>
+            <!- Set background for slide in css ->
+            <div class="header-back one slick-slide"></div>
+
+        </div>
+        <div class="item">
+            <div class="container">
+                <div class="carousel-caption blank">
+                    <h1>Lorem ipsum dolor sit amet,<br/> consectetur adipis .</h1>
+                    <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam.</p>
+                    <!-<p><a class="btn btn-lg btn-primary" href="#" role="button">Learn more</a></p>->
+                </div>
+            </div>
+            <!- Set background for slide in css ->
+            <div class="header-back two slick-slide"></div>
+        </div>
+    </div>
+    <a class="left carousel-control" href="#inSlider" role="button" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#inSlider" role="button" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+    </a>
+</div>-->
+
+
+<section id="features" class="container services">
+    <div class="row">
+        <div class="col-sm-12 bg-colegio" style="vertical-align: middle; background-color: rgba(176,33,22,0.8);">
+            <div class="col-sm-2 col-sm-offset-5"><!--logo-->
+                <img src="img/logo-rosales.jpg" class="img-responsive img-thumbnail text-center" alt="">
+            </div>
+            <div class="col-sm-12 principal-text">
+                <h1 style="color: #FFF; font-weight: bold;" class="text-center">Liceo Rosales</h1>
+                <br>
+                <h2><h2>Nuestro Objetivo</h2></h2>
+                <h4 class="principal-text text-justify">
+
+                    <p>Con la ayuda de Dios, colaborar con los padres de familia en la formación integral de profesionales responsables para el engrandecimiento de Guatemala.</p>
+
+                    <p>El Liceo Rosales, creado por Acuerdo Ministerial No. 417 y que funciona en esta ciudad, debidamente autorizado por el Ministerio de Educación, tiene como principal ocjetivo la superación de la cultura de la niñez y la juventud guatemalteca.</p>
+
+                </h4>
+            </div>
+            <!--<div class="col-sm-4"><!--lema->
+                <h3 class="bg-info p-sm b-r-lg" style="font-size: 2em;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel perferendis fugiat, earum nesciunt odit odio, porro facilis, </h3>
+            </div>
+            <div class="col-sm-4 address"><!--generalInfoContact->
+                <p><i class="fa fa-map-marker"></i>15 calle, 78-100, zona 7, <br> 
+                    Guatemala GUatel</p>
+                <address>
+                    <abbr title="Phone">Tels.:</abbr> (+502) 4576-7890 <br>
+                    <abbr title="Email">E-mail:</abbr>info@adminconlegio.com<br>
+                </address>
+                <div class="clearfix"></div>
+            </div>-->
+        </div>
+    </div>
+    <div class="row" style="padding: 2em;">
+        <div class="col-sm-6 text-justify">
+            <h1>Nuestra Visión</h1>
+
+            <p>"Brindar a la sociedad, profesionales integralmente formados(as), que a través del trabajo diario y la práctica de los valores sean agentes de cambio en sus diferentes ambientes" </p>
+        </div>
+        <div class="col-sm-6 text-justify">
+            <h1>Nuestra Misión</h1>
+
+            <p>Por medio del trabajo en equipo apoyar a los Padres de Familia, en la formación integral de sus hijos e hijas a través de un proceso de aprendizaje con orienteción pedagógica actualizada y con un acompañamiento espiritual que nos permita formar personas dignas que ejerzan su libertad con fortaleza, justicia y honestidad, valores que les permitan desarrollarse ante los retos de la sociedad actual.</p>
+        </div>
+    </div>
+</section>
+
+<!--<section  class="container features">
+    <div class="row">
+        <div class="col-lg-12 text-center">
+            <div class="navy-line"></div>
+            <h1>Over 40+ unique view<br/> <span class="navy"> with many custom components</span> </h1>
+            <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. </p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-3 text-center wow fadeInLeft">
+            <div>
+                <i class="fa fa-mobile features-icon"></i>
+                <h2>Full responsive</h2>
+                <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus.</p>
+            </div>
+            <div class="m-t-lg">
+                <i class="fa fa-bar-chart features-icon"></i>
+                <h2>6 Charts Library</h2>
+                <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus.</p>
+            </div>
+        </div>
+        <div class="col-md-6 text-center  wow zoomIn">
+            <img src="img/landing/perspective.png" alt="dashboard" class="img-responsive">
+        </div>
+        <div class="col-md-3 text-center wow fadeInRight">
+            <div>
+                <i class="fa fa-envelope features-icon"></i>
+                <h2>Mail pages</h2>
+                <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus.</p>
+            </div>
+            <div class="m-t-lg">
+                <i class="fa fa-google features-icon"></i>
+                <h2>AngularJS version</h2>
+                <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus.</p>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-12 text-center">
+            <div class="navy-line"></div>
+            <h1>Discover great feautres</h1>
+            <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. </p>
+        </div>
+    </div>
+    <div class="row features-block">
+        <div class="col-lg-6 features-text wow fadeInLeft">
+            <small>INSPINIA</small>
+            <h2>Perfectly designed </h2>
+            <p>INSPINIA Admin Theme is a premium admin dashboard template with flat design concept. It is fully responsive admin dashboard template built with Bootstrap 3+ Framework, HTML5 and CSS3, Media query. It has a huge collection of reusable UI components and integrated with latest jQuery plugins.</p>
+            <a href="" class="btn btn-primary">Learn more</a>
+        </div>
+        <div class="col-lg-6 text-right wow fadeInRight">
+            <img src="img/landing/dashboard.png" alt="dashboard" class="img-responsive pull-right">
+        </div>
+    </div>
+</section>-->
+
+
+<section id="testimonials" class="testimonials" style="margin-top: 0">
+    <section class="timeline gray-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <div class="navy-line"></div>
+                    <h1>Nuestro Programa</h1>
+                    <p>Ciencia, cultura y trabajo desde 1,973.</p>
+                </div>
+            </div>
+            <div class="row features-block">
+
+                <div class="col-lg-12">
+                    <div id="vertical-timeline" class="vertical-container light-timeline center-orientation">
+                        <div class="vertical-timeline-block">
+                            <div class="vertical-timeline-icon navy-bg">
+                                <i class="fa fa-user"></i>
+                            </div>
+
+                            <div class="vertical-timeline-content">
+                                <h2>Jornada Matutina</h2>
+                                <ul>
+                                    <li>Preprimaria</li>
+                                    <li>Primaria</li>
+                                    <li>Básico Mixto</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="vertical-timeline-block">
+                            <div class="vertical-timeline-icon navy-bg">
+                                <i class="fa fa-users"></i>
+                            </div>
+
+                            <div class="vertical-timeline-content">
+                                 <h2>Jornada Vespertina</h2>
+                                <ul>
+                                    <li>Secretariado Bilingüe y oficinista</li>
+                                    <li>Magisterio de Educación Preprimaria</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="vertical-timeline-block">
+                            <div class="vertical-timeline-icon navy-bg">
+                                <i class="fa fa-user"></i>
+                            </div>
+
+                            <div class="vertical-timeline-content">
+                                 <h2>Con Carreras para varones y señoritas</h2>
+                                <ul>
+                                    <li>Perito contador con Orientación en computación</li>
+                                    <li>Bachillerato en Ciencias y Letras Con orientación en: <br>
+                                        <ul>
+                                            <li>Diseño Gráfico</li>
+                                            <li>Computación</li>
+                                            <li>Educación.</li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </section>
+
+    <div id="incripciones" class="container">
+        <div class="row principal-text">
+            <div class="col-lg-12 text-center wow zoomIn">
+                <i class="fa fa-pencil-square-o gall-capt big-icon"></i>
+
+                <div class="testimonials-text">
+                    <i>Inscripciones 2018 ABIERTAS!!!</i>
+                <small>
+                    <br>
+                    <strong>5ta. Calle Oriente #12, Antigua Guatemala</strong>
+                </small>
+                <br>
+                <a class="btn btn-danger" href="img/inscripciones2018.pdf" download="Ficha_De_Incripciones_2018"><i class="fa fa-download"> </i> Descargar Ficha de Inscripciones</a>
+                
+                <br><br>
+
+                <small>
+                    <br>
+                    <strong>Quieres conocer más sobre cuotas, horarios, uniformes y demás información importante. </strong>
+                </small>
+                <br>
+                <a class="btn btn-danger" href="img/información LR.pdf" download="Información_Liceo_Rosales"><i class="fa fa-download"> </i> Enteraté aquí.</a>
+
+                </div>
+            
+            </div>
+        </div>
+    </div>
+
+</section>
+
+
+
+<!--<section class="features">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <div class="navy-line"></div>
+                <h1>Even more great feautres</h1>
+                <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. </p>
+            </div>
+        </div>
+        <div class="row features-block">
+            <div class="col-lg-3 features-text wow fadeInLeft">
+                <small>INSPINIA</small>
+                <h2>Perfectly designed </h2>
+                <p>INSPINIA Admin Theme is a premium admin dashboard template with flat design concept. It is fully responsive admin dashboard template built with Bootstrap 3+ Framework, HTML5 and CSS3, Media query. It has a huge collection of reusable UI components and integrated with latest jQuery plugins.</p>
+                <a href="" class="btn btn-primary">Learn more</a>
+            </div>
+            <div class="col-lg-6 text-right m-t-n-lg wow zoomIn">
+                <img src="img/landing/iphone.jpg" class="img-responsive" alt="dashboard">
+            </div>
+            <div class="col-lg-3 features-text text-right wow fadeInRight">
+                <small>INSPINIA</small>
+                <h2>Perfectly designed </h2>
+                <p>INSPINIA Admin Theme is a premium admin dashboard template with flat design concept. It is fully responsive admin dashboard template built with Bootstrap 3+ Framework, HTML5 and CSS3, Media query. It has a huge collection of reusable UI components and integrated with latest jQuery plugins.</p>
+                <a href="" class="btn btn-primary">Learn more</a>
+            </div>
+        </div>
+    </div>
+
+</section>-->
+
+
+<section id="team" class="team">
+    <div class="container">
+        <div class="row">
+            <!--<div class="col-sm-4 wow fadeInLeft">
+                <div class="team-member">
+                    <img src="img/landing/avatar3.jpg" class="img-responsive img-circle img-small" alt="">
+                    <h4><span class="navy">Amelia</span> Smith</h4>
+                    <p>Lorem ipsum dolor sit amet, illum fastidii dissentias quo ne. Sea ne sint animal iisque, nam an soluta sensibus. </p>
+                    <ul class="list-inline social-icon">
+                        <li><a href="#"><i class="fa fa-twitter"></i></a>
+                        </li>
+                        <li><a href="#"><i class="fa fa-facebook"></i></a>
+                        </li>
+                        <li><a href="#"><i class="fa fa-linkedin"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>-->
+            <div style="margin-top: 5em" class="col-sm-12">
+                <h1 class="text-center gall-capt">Galería</h1>
+            </div>
+            <div class="col-sm-12">
+                <div class="team-member wow zoomIn">
+                    <div class="lightBoxGallery">
+                            <a href="img/gallery1.jpg" title="Image from Unsplash" data-gallery=""><img src="img/gallery1.jpg" width="150" height="120"></a>
+                            <a href="img/gallery2.jpg" title="Image from Unsplash" data-gallery=""><img src="img/gallery2.jpg" width="150" height="120"></a>
+                            <a href="img/gallery3.jpg" title="Image from Unsplash" data-gallery=""><img src="img/gallery3.jpg" width="150" height="120"></a>
+                            <a href="img/gallery4.jpg" title="Image from Unsplash" data-gallery=""><img src="img/gallery4.jpg" width="150" height="120"></a>
+                            <a href="img/gallery5.jpg" title="Image from Unsplash" data-gallery=""><img src="img/gallery5.jpg" width="150" height="120"></a>
+                            <a href="img/gallery6.jpg" title="Image from Unsplash" data-gallery=""><img src="img/gallery6.jpg" width="150" height="120"></a>
+                            <a href="img/gallery7.jpg" title="Image from Unsplash" data-gallery=""><img src="img/gallery7.jpg" width="150" height="120"></a>
+                            <a href="img/gallery8.jpg" title="Image from Unsplash" data-gallery=""><img src="img/gallery8.jpg" width="150" height="120"></a>
+                            <a href="img/gallery9.jpg" title="Image from Unsplash" data-gallery=""><img src="img/gallery9.jpg" width="150" height="120"></a>
+                            <a href="img/gallery10.jpg" title="Image from Unsplash" data-gallery=""><img src="img/gallery10.jpg" width="150" height="120"></a>
+                            <a href="img/gallery1-1.jpg" title="Image from Unsplash" data-gallery=""><img src="img/gallery1-1.jpg" width="150" height="120"></a>
+                            <a href="img/gallery1-2.jpg" title="Image from Unsplash" data-gallery=""><img src="img/gallery1-2.jpg" width="150" height="120"></a>
+                            <a href="img/gallery1-3.jpg" title="Image from Unsplash" data-gallery=""><img src="img/gallery1-3.jpg" width="150" height="120"></a>
+                            <a href="img/gallery1-4.jpg" title="Image from Unsplash" data-gallery=""><img src="img/gallery1-4.jpg" width="150" height="120"></a>
+                            <a href="img/gallery1-5.jpg" title="Image from Unsplash" data-gallery=""><img src="img/gallery1-5.jpg" width="150" height="120"></a>
+                            <a href="img/gallery1-6.jpg" title="Image from Unsplash" data-gallery=""><img src="img/gallery1-6.jpg" width="150" height="120"></a>
+                            <a href="img/gallery1-7.jpg" title="Image from Unsplash" data-gallery=""><img src="img/gallery1-7.jpg" width="150" height="120"></a>
+                            <a href="img/gallery1-8.jpg" title="Image from Unsplash" data-gallery=""><img src="img/gallery1-8.jpg" width="150" height="120"></a>
+                            <a href="img/gallery1-9.jpg" title="Image from Unsplash" data-gallery=""><img src="img/gallery1-9.jpg" width="150" height="120"></a>
+                            <a href="img/gallery1-10.jpg" title="Image from Unsplash" data-gallery=""><img src="img/gallery1-10.jpg" width="150" height="120"></a>
+                            <!-- The Gallery as lightbox dialog, should be a child element of the document body -->
+                            <div id="blueimp-gallery" class="blueimp-gallery">
+                                <div class="slides"></div>
+                                <h3 class="title"></h3>
+                                <a class="prev">‹</a>
+                                <a class="next">›</a>
+                                <a class="close">×</a>
+                                <a class="play-pause"></a>
+                                <ol class="indicator"></ol>
+                            </div>
+
+                        </div>
+                </div>
+            </div>
+            <!--<div class="col-sm-4 wow fadeInRight">
+                <div class="team-member">
+                    <img src="img/landing/avatar2.jpg" class="img-responsive img-circle img-small" alt="">
+                    <h4><span class="navy">Peter</span> Johnson</h4>
+                    <p>Lorem ipsum dolor sit amet, illum fastidii dissentias quo ne. Sea ne sint animal iisque, nam an soluta sensibus.</p>
+                    <ul class="list-inline social-icon">
+                        <li><a href="#"><i class="fa fa-twitter"></i></a>
+                        </li>
+                        <li><a href="#"><i class="fa fa-facebook"></i></a>
+                        </li>
+                        <li><a href="#"><i class="fa fa-linkedin"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>-->
+        </div>
+        <!-- <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 text-center m-t-lg m-b-lg">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eaque, laboriosam veritatis, quos non quis ad perspiciatis, totam corporis ea, alias ut unde.</p>
+            </div>
+        </div> -->
+    </div>
+</section>
+
+
+
+<!-- <section class="comments gray-section" style="margin-top: 0">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <div class="navy-line"></div>
+                <h1>Comentarios</h1>
+                <p>Donec sed odio dui. Etiam porta sem malesuada. </p>
+            </div>
+        </div>
+        <div class="row features-block">
+            <div class="col-lg-4">
+                <div class="bubble">
+                    "Este es un colegio --- Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque ut perspiciatis harum deserunt nulla, deleniti consequatur."
+                </div>
+                <div class="comments-avatar">
+                    <a href="" class="pull-left">
+                        <img alt="image" src="img/landing/avatar3.jpg">
+                    </a>
+                    <div class="media-body">
+                        <div class="commens-name">
+                            María Sanchez
+                        </div>
+                        <small class="text-muted">Madre</small>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4">
+                <div class="bubble">
+                    "Este es un colegio --- Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque ut perspiciatis harum deserunt nulla, deleniti consequatur."
+                </div>
+                <div class="comments-avatar">
+                    <a href="" class="pull-left">
+                        <img alt="image" src="img/landing/avatar3.jpg">
+                    </a>
+                    <div class="media-body">
+                        <div class="commens-name">
+                            María Sanchez
+                        </div>
+                        <small class="text-muted">Madre</small>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4">
+                <div class="bubble">
+                    "Este es un colegio --- Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque ut perspiciatis harum deserunt nulla, deleniti consequatur."
+                </div>
+                <div class="comments-avatar">
+                    <a href="" class="pull-left">
+                        <img alt="image" src="img/landing/avatar3.jpg">
+                    </a>
+                    <div class="media-body">
+                        <div class="commens-name">
+                            María Sanchez
+                        </div>
+                        <small class="text-muted">Madre</small>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</section> -->
+
+<!-- <section class="features">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <div class="navy-line"></div>
+                <h1>More and more extra great feautres</h1>
+                <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. </p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-5 col-lg-offset-1 features-text">
+                <small>INSPINIA</small>
+                <h2>Perfectly designed </h2>
+                <i class="fa fa-bar-chart big-icon pull-right"></i>
+                <p>INSPINIA Admin Theme is a premium admin dashboard template with flat design concept. It is fully responsive admin dashboard template built with Bootstrap 3+ Framework, HTML5 and CSS3, Media query. It has a huge collection of reusable UI components and integrated with.</p>
+            </div>
+            <div class="col-lg-5 features-text">
+                <small>INSPINIA</small>
+                <h2>Perfectly designed </h2>
+                <i class="fa fa-bolt big-icon pull-right"></i>
+                <p>INSPINIA Admin Theme is a premium admin dashboard template with flat design concept. It is fully responsive admin dashboard template built with Bootstrap 3+ Framework, HTML5 and CSS3, Media query. It has a huge collection of reusable UI components and integrated with.</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-5 col-lg-offset-1 features-text">
+                <small>INSPINIA</small>
+                <h2>Perfectly designed </h2>
+                <i class="fa fa-clock-o big-icon pull-right"></i>
+                <p>INSPINIA Admin Theme is a premium admin dashboard template with flat design concept. It is fully responsive admin dashboard template built with Bootstrap 3+ Framework, HTML5 and CSS3, Media query. It has a huge collection of reusable UI components and integrated with.</p>
+            </div>
+            <div class="col-lg-5 features-text">
+                <small>INSPINIA</small>
+                <h2>Perfectly designed </h2>
+                <i class="fa fa-users big-icon pull-right"></i>
+                <p>INSPINIA Admin Theme is a premium admin dashboard template with flat design concept. It is fully responsive admin dashboard template built with Bootstrap 3+ Framework, HTML5 and CSS3, Media query. It has a huge collection of reusable UI components and integrated with.</p>
+            </div>
+        </div>
+    </div>
+
+</section> -->
+
+<div class="container">
+    <div style="margin-top: 5em;" class="row">
+        <div class="col-sm-12 text-center">
+            <i class="text-center">*Espacio para calendarios Escolares</i>
+        </div>
+    </div>
+</div>
+
+<!--<section id="pricing" class="pricing">
+    <div class="container">
+        <div class="row m-b-lg">
+            <div class="col-lg-12 text-center">
+                <div class="navy-line"></div>
+                <h1>Programación 2018</h1>
+                <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod.</p>
+            </div>
+            <div class="row">
+                <div class="col-sm-6">
+                    <img src="img/vectors/188873-OXN5Z3-360.jpg" alt="" class="img-responsive img-thumbnail">
+                </div>
+                <div class="col-sm-6">
+                    <img src="img/vectors/3506.jpg" alt="" class="img-responsive img-thumbnail">
+                </div>
+            </div>
+        </div>
+        
+    </div>
+
+</section> -->
+
+<section id="contact" class="gray-section contact">
+    <div class="container">
+        <div class="row m-b-lg">
+            <div class="col-lg-12 text-center">
+                <div class="navy-line"></div>
+                <h1>Contacto</h1>
+                <p>Sera un gusto poder escuchar de tí</p>
+            </div>
+        </div>
+        <div class="row m-b-lg">
+            <div class="col-lg-3 col-lg-offset-3">
+                <address>
+                    <strong><span class="navy">Liceo Rosales.</span></strong><br/>
+                    5ta. Calle Oriente #12 <br/>
+                    Antigua Guatemala, Guatemala<br/>
+                    <abbr title="Phone">P:</abbr> (+502) 7832-7039 / 7832-5538
+                </address>
+            </div>
+            <div class="col-lg-4">
+                <i class="text-color">
+                    Ciencia - Cultura - Trabajo
+                </i>
+                <iframe class="thumbnail" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3861.633367161087!2d-90.74139338570022!3d14.562946581903816!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85890e09f4d1b763%3A0xcd2ed568c9078311!2sLiceo+Rosales!5e0!3m2!1ses!2sgt!4v1515261893315" width="100%" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <a href="mailto:info@liceorosales.com" class="btn btn-primary">Envianos un Email</a>
+                <p class="m-t-sm">
+                    Siguenos en nuestras redes sociales
+                </p>
+                <ul class="list-inline social-icon">
+                    <li><a href="https://www.facebook.com/liceo.rosales"><i class="fa fa-facebook"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 text-center m-t-lg m-b-lg">
+                <p><strong>&copy; 2018 - 2019 Liceo Rosales</strong> | Ciencia - Cultura - Trabajo <br/> <small><strong>Powered by RCESoftGroup &copy;</strong></small></p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Mainly scripts -->
+<script src="js/jquery-3.1.1.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/plugins/metisMenu/jquery.metisMenu.js"></script>
+<script src="js/plugins/slimscroll/jquery.slimscroll.min.js"></script>
+
+<!-- Custom and plugin javascript -->
+<script src="js/inspinia.js"></script>
+<script src="js/plugins/pace/pace.min.js"></script>
+<script src="js/plugins/wow/wow.min.js"></script>
+
+<!-- blueimp gallery -->
+<script src="js/plugins/blueimp/jquery.blueimp-gallery.min.js"></script>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.slicebox.js"></script>
+<script type="text/javascript">
+    $(function() {
+        
+        var Page = (function() {
+
+            var $navArrows = $( '#nav-arrows' ).hide(),
+                $shadow = $( '#shadow' ).hide(),
+                slicebox = $( '#sb-slider' ).slicebox( {
+                    onReady : function() {
+
+                        $navArrows.show();
+                        $shadow.show();
+
+                    },
+                    orientation : 'r',
+                    cuboidsRandom : true,
+                    disperseFactor : 30,
+                    // if true the slicebox will start the animation automatically
+                    autoplay : true,
+
+                    // time (ms) between each rotation, if autoplay is true
+                    interval: 7000,
+
+                    // the fallback will just fade out / fade in the items
+                    // this is the time fr the fade effect
+                    fallbackFadeSpeed : 300
+                } ),
+                
+                init = function() {
+
+                    initEvents();
+                    
+                },
+                initEvents = function() {
+
+                    // add navigation events
+                    $navArrows.children( ':first' ).on( 'click', function() {
+
+                        slicebox.next();
+                        return false;
+
+                    } );
+
+                    $navArrows.children( ':last' ).on( 'click', function() {
+                        
+                        slicebox.previous();
+                        return false;
+
+                    } );
+
+                };
+
+                return { init : init };
+
+        })();
+
+        Page.init();
+    });
+
+    
+</script>
+
+
+<script>
+    $('#sb-slider').slicebox();
+</script>
+<script>
+
+    $(document).ready(function () {
+
+        $('body').scrollspy({
+            target: '.navbar-fixed-top',
+            offset: 80
+        });
+
+        // Page scrolling feature
+        $('a.page-scroll').bind('click', function(event) {
+            var link = $(this);
+            $('html, body').stop().animate({
+                scrollTop: $(link.attr('href')).offset().top - 50
+            }, 500);
+            event.preventDefault();
+            $("#navbar").collapse('hide');
+        });
+    });
+
+    var cbpAnimatedHeader = (function() {
+        var docElem = document.documentElement,
+                header = document.querySelector( '.navbar-default' ),
+                didScroll = false,
+                changeHeaderOn = 200;
+        function init() {
+            window.addEventListener( 'scroll', function( event ) {
+                if( !didScroll ) {
+                    didScroll = true;
+                    setTimeout( scrollPage, 250 );
+                }
+            }, false );
+        }
+        function scrollPage() {
+            var sy = scrollY();
+            if ( sy >= changeHeaderOn ) {
+                $(header).addClass('navbar-scroll')
+            }
+            else {
+                $(header).removeClass('navbar-scroll')
+            }
+            didScroll = false;
+        }
+        function scrollY() {
+            return window.pageYOffset || docElem.scrollTop;
+        }
+        init();
+
+    })();
+
+    // Activate WOW.js plugin for animation on scrol
+    new WOW().init();
+
+</script>
+
+</body>
+</html>
