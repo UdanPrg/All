@@ -271,6 +271,10 @@ header.masthead p {
 .portfolio-box:focus {
   outline: none;
 }
+.nServcio{
+  padding: 1rem 2rem;
+  color: #DD4128;
+}
 
 @media (min-width: 768px) {
   .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-category {
